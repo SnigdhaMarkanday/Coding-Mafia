@@ -13,7 +13,16 @@ bool isPrime(int n){
     }
     return true;
 }
-
+void printStar(int n){
+    int r,c;
+     for(r=1;r<=n;r++){
+         for(c=1;c<=r;c++){
+             cout<<"*";
+             
+         }
+         cout<<endl;
+     }
+}
 int main(){
     cout<<"Snigdha Markanday"<<endl;
     //Step 1
@@ -36,8 +45,14 @@ int main(){
    
     }
     cout<<"Total Prime nos."<<co<<endl;
+    //Step 4
+    int n;
+    cout<<"Enter to input number of Stars";
+    cin>>n;
+    printStar(n);
     return 0;
 }
+
 int sum (int a,int b){
     int ans = a+b;
     return ans;
@@ -46,3 +61,4 @@ int sum (int a,int b,int c){
     int ans = a+b+c;
     return ans;
 }
+
